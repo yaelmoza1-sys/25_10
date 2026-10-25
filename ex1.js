@@ -1,0 +1,9 @@
+function Phone(brand, model) {
+    this.brand = brand
+    this.model = model
+}
+Phone.prototype.details = function() {
+    console.log(`Phone: ${this.brand} ${this.model}`)
+}
+const myPhone = new Phone("Samsung", "S22")
+myPhone.details()
